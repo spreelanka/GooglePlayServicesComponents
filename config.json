@@ -107,15 +107,15 @@
 		{
 			"groupId" : "com.google.android.gms",
 			"artifactId" : "play-services-base",
-			"version" : "15.0.1",
-			"nugetVersion" : "71.1501.0-preview1",
+			"version" : "16.1.0",
+			"nugetVersion" : "71.1610.0-preview1",
 			"nugetId" : "Xamarin.GooglePlayServices.Base"
 		},
 		{
 			"groupId" : "com.google.android.gms",
 			"artifactId" : "play-services-basement",
-			"version" : "15.0.1",
-			"nugetVersion" : "71.1501.0-preview1",
+			"version" : "16.2.0",
+			"nugetVersion" : "71.1620.0-preview1",
 			"nugetId" : "Xamarin.GooglePlayServices.Basement"
 		},
 		{
@@ -135,8 +135,8 @@
 		{
 			"groupId" : "com.google.android.gms",
 			"artifactId" : "play-services-clearcut",
-			"version" : "15.0.1",
-			"nugetVersion" : "71.1501.0-preview1",
+			"version" : "16.0.0",
+			"nugetVersion" : "71.1600.0-preview1",
 			"nugetId" : "Xamarin.GooglePlayServices.Clearcut"
 		},
 		{
@@ -212,15 +212,15 @@
 		{
 			"groupId" : "com.google.android.gms",
 			"artifactId" : "play-services-location",
-			"version" : "15.0.1",
-			"nugetVersion" : "71.1501.0-preview1",
+			"version" : "16.0.0",
+			"nugetVersion" : "71.1600.0-preview1",
 			"nugetId" : "Xamarin.GooglePlayServices.Location"
 		},
 		{
 			"groupId" : "com.google.android.gms",
 			"artifactId" : "play-services-maps",
-			"version" : "15.0.1",
-			"nugetVersion" : "71.1501.0-preview1",
+			"version" : "16.0.0",
+			"nugetVersion" : "71.1600.0-preview1",
 			"nugetId" : "Xamarin.GooglePlayServices.Maps"
 		},
 		{
@@ -317,8 +317,8 @@
 		{
 			"groupId" : "com.google.android.gms",
 			"artifactId" : "play-services-tasks",
-			"version" : "15.0.1",
-			"nugetVersion" : "71.1501.0-preview1",
+			"version" : "16.0.1",
+			"nugetVersion" : "71.1601.0-preview1",
 			"nugetId" : "Xamarin.GooglePlayServices.Tasks"
 		},			
 		{
