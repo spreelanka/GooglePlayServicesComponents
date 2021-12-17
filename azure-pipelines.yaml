@@ -39,6 +39,7 @@ jobs:
         # Preferred prefixes
         - Xamarin
         - GoogleGson
+        - Square
       macosImage: 'macOS-11'                                  # the name of the macOS VM image
                                                               # BigSur 20211120
       xcode: 13.1
