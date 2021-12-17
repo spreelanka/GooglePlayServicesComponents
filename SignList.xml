@@ -13,6 +13,7 @@
     <FirstParty Include="disklrucache.jar" />
     <FirstParty Include="Xamarin.JavaX.Inject.dll" />
     <FirstParty Include="Xamarin.Google.UserMessagingPlatform.dll" />    
+    <FirstParty Include="Square.*.dll" />    
   </ItemGroup>
 
   <ItemGroup>
