@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  
+  <ItemGroup>
+  </ItemGroup>
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  <PropertyGroup>
+    <AndroidFragmentType>AndroidX.Fragment.App.Fragment</AndroidFragmentType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_playservicesstreamprotect_16_0_2" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_playservicesstreamprotect_16_0_2">
+    <ItemGroup>
+      <XamarinBuildDownload Include="playservicesstreamprotect-16.0.2">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-streamprotect/16.0.2/play-services-streamprotect-16.0.2.aar</Url>
+        <ToFile>playservicesstreamprotect-16.0.2.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Sha256>8cedcd9cd415f22489abb72e9dd0b2557c4eed9e8c2a6de6fa26bbe78feed5e5</Sha256>
+      </XamarinBuildDownload>
+    </ItemGroup>
+
+
+    <ItemGroup>
+     <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)playservicesstreamprotect-16.0.2\playservicesstreamprotect-16.0.2.aar" />
+      <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)playservicesstreamprotect-16.0.2\playservicesstreamprotect-16.0.2.aar" />
+    </ItemGroup>
+  </Target>
+
+</Project>

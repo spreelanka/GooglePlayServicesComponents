@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  
+  <ItemGroup>
+  </ItemGroup>
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  <PropertyGroup>
+    <AndroidFragmentType>AndroidX.Fragment.App.Fragment</AndroidFragmentType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_firebasefirestorektx_24_3_1" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_firebasefirestorektx_24_3_1">
+    <ItemGroup>
+      <XamarinBuildDownload Include="firebasefirestorektx-24.3.1">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-firestore-ktx/24.3.1/firebase-firestore-ktx-24.3.1.aar</Url>
+        <ToFile>firebasefirestorektx-24.3.1.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Sha256>880d84d2766c42ad420d0d928791e64459ee6d55805b1d797eec66af2a6bd5a0</Sha256>
+      </XamarinBuildDownload>
+    </ItemGroup>
+
+
+    <ItemGroup>
+     <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)firebasefirestorektx-24.3.1\firebasefirestorektx-24.3.1.aar" />
+      <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)firebasefirestorektx-24.3.1\firebasefirestorektx-24.3.1.aar" />
+    </ItemGroup>
+  </Target>
+
+</Project>

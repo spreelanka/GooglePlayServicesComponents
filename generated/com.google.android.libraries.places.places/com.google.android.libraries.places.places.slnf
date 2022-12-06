@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "path": "..\\GooglePlayServices.sln",
+    "projects": [
+"com.android.volley.volley\\com.android.volley.volley.csproj","com.google.android.gms.play-services-base\\com.google.android.gms.play-services-base.csproj","com.google.android.gms.play-services-basement\\com.google.android.gms.play-services-basement.csproj","com.google.android.gms.play-services-clearcut\\com.google.android.gms.play-services-clearcut.csproj","com.google.android.gms.play-services-location\\com.google.android.gms.play-services-location.csproj","com.google.android.gms.play-services-maps\\com.google.android.gms.play-services-maps.csproj","com.google.android.gms.play-services-tasks\\com.google.android.gms.play-services-tasks.csproj","com.google.android.libraries.places.places\\com.google.android.libraries.places.places.csproj"
+    ]
+  }
+}

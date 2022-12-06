@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  
+  <ItemGroup>
+    <ProguardConfiguration Include="$(MSBuildThisFileDirectory)..\..\proguard\proguard.txt" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  <PropertyGroup>
+    <AndroidFragmentType>AndroidX.Fragment.App.Fragment</AndroidFragmentType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_firebasecrashlyticsndk_18_2_13" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_firebasecrashlyticsndk_18_2_13">
+    <ItemGroup>
+      <XamarinBuildDownload Include="firebasecrashlyticsndk-18.2.13">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-crashlytics-ndk/18.2.13/firebase-crashlytics-ndk-18.2.13.aar</Url>
+        <ToFile>firebasecrashlyticsndk-18.2.13.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Sha256>98eca52b9b1287f134e7d496853496c585b1a776a8439574ec0f6ae8e3238fc7</Sha256>
+      </XamarinBuildDownload>
+    </ItemGroup>
+
+
+    <ItemGroup>
+     <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)firebasecrashlyticsndk-18.2.13\firebasecrashlyticsndk-18.2.13.aar" />
+      <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)firebasecrashlyticsndk-18.2.13\firebasecrashlyticsndk-18.2.13.aar" />
+    </ItemGroup>
+  </Target>
+
+</Project>

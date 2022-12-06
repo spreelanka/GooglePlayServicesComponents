@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  
+  <ItemGroup>
+  </ItemGroup>
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  <PropertyGroup>
+    <AndroidFragmentType>AndroidX.Fragment.App.Fragment</AndroidFragmentType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_playservicesauth_20_3_0" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_playservicesauth_20_3_0">
+    <ItemGroup>
+      <XamarinBuildDownload Include="playservicesauth-20.3.0">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-auth/20.3.0/play-services-auth-20.3.0.aar</Url>
+        <ToFile>playservicesauth-20.3.0.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Sha256>657f3bf85af4970f94bd6b87bdf2e67e7bfbdaacfd9635974826bcc634bda8a6</Sha256>
+      </XamarinBuildDownload>
+    </ItemGroup>
+
+
+    <ItemGroup>
+     <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)playservicesauth-20.3.0\playservicesauth-20.3.0.aar" />
+      <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)playservicesauth-20.3.0\playservicesauth-20.3.0.aar" />
+    </ItemGroup>
+  </Target>
+
+</Project>

@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "path": "..\\GooglePlayServices.sln",
+    "projects": [
+"javax.inject.javax.inject\\javax.inject.javax.inject.csproj","com.google.dagger.dagger\\com.google.dagger.dagger.csproj"
+    ]
+  }
+}

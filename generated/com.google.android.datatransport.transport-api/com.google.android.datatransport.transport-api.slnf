@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "path": "..\\GooglePlayServices.sln",
+    "projects": [
+"com.google.android.datatransport.transport-api\\com.google.android.datatransport.transport-api.csproj"
+    ]
+  }
+}

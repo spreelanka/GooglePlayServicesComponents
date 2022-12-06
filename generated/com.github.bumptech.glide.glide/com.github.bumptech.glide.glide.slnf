@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "path": "..\\GooglePlayServices.sln",
+    "projects": [
+"com.github.bumptech.glide.gifdecoder\\com.github.bumptech.glide.gifdecoder.csproj","com.github.bumptech.glide.disklrucache\\com.github.bumptech.glide.disklrucache.csproj","com.github.bumptech.glide.annotations\\com.github.bumptech.glide.annotations.csproj","com.github.bumptech.glide.glide\\com.github.bumptech.glide.glide.csproj"
+    ]
+  }
+}

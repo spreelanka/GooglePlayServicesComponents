@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  
+  <ItemGroup>
+    <ProguardConfiguration Include="$(MSBuildThisFileDirectory)..\..\proguard\proguard.txt" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  <PropertyGroup>
+    <AndroidFragmentType>AndroidX.Fragment.App.Fragment</AndroidFragmentType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_featuredeliveryktx_2_0_0" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_featuredeliveryktx_2_0_0">
+    <ItemGroup>
+      <XamarinBuildDownload Include="featuredeliveryktx-2.0.0">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/android/play/feature-delivery-ktx/2.0.0/feature-delivery-ktx-2.0.0.aar</Url>
+        <ToFile>featuredeliveryktx-2.0.0.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Sha256>f68d0711336dc05c92bf7f56f6e17eab69de70559d38c10a95b9f307fb6f8644</Sha256>
+      </XamarinBuildDownload>
+    </ItemGroup>
+
+
+    <ItemGroup>
+     <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)featuredeliveryktx-2.0.0\featuredeliveryktx-2.0.0.aar" />
+      <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)featuredeliveryktx-2.0.0\featuredeliveryktx-2.0.0.aar" />
+    </ItemGroup>
+  </Target>
+
+</Project>

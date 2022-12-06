@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  
+  <ItemGroup>
+    <ProguardConfiguration Include="$(MSBuildThisFileDirectory)..\..\proguard\proguard.txt" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  <PropertyGroup>
+    <AndroidFragmentType>AndroidX.Fragment.App.Fragment</AndroidFragmentType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_languageid_17_0_4" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_languageid_17_0_4">
+    <ItemGroup>
+      <XamarinBuildDownload Include="languageid-17.0.4">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/mlkit/language-id/17.0.4/language-id-17.0.4.aar</Url>
+        <ToFile>languageid-17.0.4.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Sha256>bdc5849038893499452b59ef32d79606ae1ec1bb30375bae9aafb991f633f1e9</Sha256>
+      </XamarinBuildDownload>
+    </ItemGroup>
+
+
+    <ItemGroup>
+     <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)languageid-17.0.4\languageid-17.0.4.aar" />
+      <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)languageid-17.0.4\languageid-17.0.4.aar" />
+    </ItemGroup>
+  </Target>
+
+</Project>

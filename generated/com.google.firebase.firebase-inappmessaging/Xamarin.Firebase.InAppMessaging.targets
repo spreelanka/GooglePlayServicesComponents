@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  
+  <ItemGroup>
+    <ProguardConfiguration Include="$(MSBuildThisFileDirectory)..\..\proguard\proguard.txt" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  <PropertyGroup>
+    <AndroidFragmentType>AndroidX.Fragment.App.Fragment</AndroidFragmentType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_firebaseinappmessaging_20_1_3" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_firebaseinappmessaging_20_1_3">
+    <ItemGroup>
+      <XamarinBuildDownload Include="firebaseinappmessaging-20.1.3">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-inappmessaging/20.1.3/firebase-inappmessaging-20.1.3.aar</Url>
+        <ToFile>firebaseinappmessaging-20.1.3.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Sha256>2d08b748873e53f0956c3b71f3fb4c0de2f9e7949ef767d3a0becb20ee873508</Sha256>
+      </XamarinBuildDownload>
+    </ItemGroup>
+
+
+    <ItemGroup>
+     <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)firebaseinappmessaging-20.1.3\firebaseinappmessaging-20.1.3.aar" />
+      <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)firebaseinappmessaging-20.1.3\firebaseinappmessaging-20.1.3.aar" />
+    </ItemGroup>
+  </Target>
+
+</Project>

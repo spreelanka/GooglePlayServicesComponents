@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "path": "..\\GooglePlayServices.sln",
+    "projects": [
+"com.squareup.retrofit2.retrofit\\com.squareup.retrofit2.retrofit.csproj","com.squareup.retrofit2.adapter-rxjava2\\com.squareup.retrofit2.adapter-rxjava2.csproj"
+    ]
+  }
+}

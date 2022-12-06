@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  
+  <ItemGroup>
+  </ItemGroup>
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  <PropertyGroup>
+    <AndroidFragmentType>AndroidX.Fragment.App.Fragment</AndroidFragmentType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_assetdelivery_2_0_0" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_assetdelivery_2_0_0">
+    <ItemGroup>
+      <XamarinBuildDownload Include="assetdelivery-2.0.0">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/android/play/asset-delivery/2.0.0/asset-delivery-2.0.0.aar</Url>
+        <ToFile>assetdelivery-2.0.0.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Sha256>24e5167f24f99550645a09dc4ff32b6d15ec37093f91d7ad7a31c901f1160f04</Sha256>
+      </XamarinBuildDownload>
+    </ItemGroup>
+
+
+    <ItemGroup>
+     <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)assetdelivery-2.0.0\assetdelivery-2.0.0.aar" />
+      <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)assetdelivery-2.0.0\assetdelivery-2.0.0.aar" />
+    </ItemGroup>
+  </Target>
+
+</Project>

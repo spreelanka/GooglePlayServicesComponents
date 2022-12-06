@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "path": "..\\GooglePlayServices.sln",
+    "projects": [
+"io.grpc.grpc-core\\io.grpc.grpc-core.csproj","com.squareup.okio.okio\\com.squareup.okio.okio.csproj","io.perfmark.perfmark-api\\io.perfmark.perfmark-api.csproj","io.grpc.grpc-okhttp\\io.grpc.grpc-okhttp.csproj"
+    ]
+  }
+}

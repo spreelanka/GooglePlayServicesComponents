@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  
+  <ItemGroup>
+    <ProguardConfiguration Include="$(MSBuildThisFileDirectory)..\..\proguard\proguard.txt" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  <PropertyGroup>
+    <AndroidFragmentType>AndroidX.Fragment.App.Fragment</AndroidFragmentType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_places_2_0_0" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_places_2_0_0">
+    <ItemGroup>
+      <XamarinBuildDownload Include="places-2.0.0">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/android/libraries/places/places/2.0.0/places-2.0.0.aar</Url>
+        <ToFile>places-2.0.0.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Sha256>1796ab19dda0f69effc4ad0064f02822619fb003322700496281a48cd6c76461</Sha256>
+      </XamarinBuildDownload>
+    </ItemGroup>
+
+
+    <ItemGroup>
+     <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)places-2.0.0\places-2.0.0.aar" />
+      <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)places-2.0.0\places-2.0.0.aar" />
+    </ItemGroup>
+  </Target>
+
+</Project>

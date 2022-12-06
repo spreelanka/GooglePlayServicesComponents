@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  
+  <ItemGroup>
+  </ItemGroup>
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  <PropertyGroup>
+    <AndroidFragmentType>AndroidX.Fragment.App.Fragment</AndroidFragmentType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_firebasedatabasektx_20_0_6" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_firebasedatabasektx_20_0_6">
+    <ItemGroup>
+      <XamarinBuildDownload Include="firebasedatabasektx-20.0.6">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-database-ktx/20.0.6/firebase-database-ktx-20.0.6.aar</Url>
+        <ToFile>firebasedatabasektx-20.0.6.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Sha256>f22384f8d944cc0283c07ffc61a0873e2d26073eda7afe8170c80de86da4712b</Sha256>
+      </XamarinBuildDownload>
+    </ItemGroup>
+
+
+    <ItemGroup>
+     <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)firebasedatabasektx-20.0.6\firebasedatabasektx-20.0.6.aar" />
+      <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)firebasedatabasektx-20.0.6\firebasedatabasektx-20.0.6.aar" />
+    </ItemGroup>
+  </Target>
+
+</Project>

@@ -1,0 +1,81 @@
+<Project Sdk="Xamarin.Legacy.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>MonoAndroid12.0;net6.0-android31.0</TargetFrameworks>
+    <IsBindingProject>true</IsBindingProject>
+    <!--
+      No warnings for:
+       - CS0618: 'member' is obsolete: 'text'
+       - CS0109: The member 'member' does not hide an inherited member. The new keyword is not required
+       - CS0114: 'function1' hides inherited member 'function2'. To make the current method override that implementation, add the override keyword. Otherwise add the new keyword.
+       - CS0628: 'member' : new protected member declared in sealed class
+       - CS0108: 'member1' hides inherited member 'member2'. Use the new keyword if hiding was intended.
+       - CS0809: Obsolete member 'member' overrides non-obsolete member 'member'
+    -->
+    <NoWarn>0618;0109;0114;0628;0108;0809</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AndroidClassParser>class-parse</AndroidClassParser>
+    <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>Microsoft</Authors>
+    <Owners>Microsoft</Owners>
+    <Copyright>© Microsoft Corporation. All rights reserved.</Copyright>
+    <PackageProjectUrl>https://go.microsoft.com/fwlink/?linkid=865435</PackageProjectUrl>
+    <RepositoryUrl>https://go.microsoft.com/fwlink/?linkid=865435</RepositoryUrl>
+    <RequireLicenceAcceptance>true</RequireLicenceAcceptance>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT AND Apache-2.0</PackageLicenseExpression>
+
+      <PackageId>Square.JavaPoet</PackageId>
+      <RootNamespace>Square.JavaPoet</RootNamespace>
+      <AssemblyName>Square.JavaPoet</AssemblyName>
+            <Title>.NET for Android (formerly Xamarin.Android) JavaPoet bindings for Xamarin.Android</Title>
+            <Summary>APIs to generate Java source code</Summary>
+            <Description>
+              JavaPoet is library, which provides APIs to generate Java source code. 
+              It can generate primitive types, reference types and their variants (such as classes, interfaces, 
+              enumerated types, anonymous inner classes), fields, methods, parameters, annotations, and Javadocs.
+            </Description>
+            <PackageDescription>
+              JavaPoet is library, which provides APIs to generate Java source code. 
+              It can generate primitive types, reference types and their variants (such as classes, interfaces, 
+              enumerated types, anonymous inner classes), fields, methods, parameters, annotations, and Javadocs.
+            </PackageDescription>
+            <RequireLicenceAcceptance>true</RequireLicenceAcceptance>
+            <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+            <PackageTags>.NET dotnet javapoet square square.javapoet bindings xamarin android monodroid  artifact=com.squareup:javapoet artifact_versioned=com.squareup:javapoet:1.13.0</PackageTags>
+      <PackageVersion>1.13.0.2</PackageVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <TransformFile Include="..\..\source\com.squareup\javapoet\Transforms\*.xml" Link="Transforms\%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\source\com.squareup\javapoet\Additions\*.cs" Link="Additions\%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AndroidLibrary 
+        Include="..\..\externals\com.squareup\javapoet.aar" Link="Jars\%(Filename)%(Extension)" 
+        Condition="Exists('..\..\externals\com.squareup\javapoet.aar')"
+         />
+    <Embeddedjar 
+        Include="..\..\externals\com.squareup\javapoet.jar" Link="Jars\%(Filename)%(Extension)" 
+        Condition="Exists('..\..\externals\com.squareup\javapoet.jar')"
+        />
+    <JavaSourcesJar Include="..\..\externals\com.squareup\javapoet-sources.jar" Link="Jars\%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\templates\squareup-okhttp\License.md" Pack="true" PackagePath="LICENSE.md" />
+    <None Include="..\..\templates\squareup-okhttp\External-Dependency-Info.txt" Pack="true" PackagePath="THIRD-PARTY-NOTICES.txt" />
+  </ItemGroup>
+
+</Project>

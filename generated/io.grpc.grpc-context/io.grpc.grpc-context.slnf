@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "path": "..\\GooglePlayServices.sln",
+    "projects": [
+"io.grpc.grpc-context\\io.grpc.grpc-context.csproj"
+    ]
+  }
+}

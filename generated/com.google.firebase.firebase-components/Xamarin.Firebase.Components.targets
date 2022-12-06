@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  
+  <ItemGroup>
+    <ProguardConfiguration Include="$(MSBuildThisFileDirectory)..\..\proguard\proguard.txt" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  <PropertyGroup>
+    <AndroidFragmentType>AndroidX.Fragment.App.Fragment</AndroidFragmentType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_firebasecomponents_17_0_1" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_firebasecomponents_17_0_1">
+    <ItemGroup>
+      <XamarinBuildDownload Include="firebasecomponents-17.0.1">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-components/17.0.1/firebase-components-17.0.1.aar</Url>
+        <ToFile>firebasecomponents-17.0.1.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Sha256>be65491772a46069db3f92a52080bd2ea248d2359d8d0956ab3e6fe5264a32a9</Sha256>
+      </XamarinBuildDownload>
+    </ItemGroup>
+
+
+    <ItemGroup>
+     <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)firebasecomponents-17.0.1\firebasecomponents-17.0.1.aar" />
+      <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)firebasecomponents-17.0.1\firebasecomponents-17.0.1.aar" />
+    </ItemGroup>
+  </Target>
+
+</Project>

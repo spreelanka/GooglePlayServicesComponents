@@ -35,7 +35,6 @@ cake.sh.commit
 .vs/
 tools/
 .vscode/
-generated
 binderator
 models.json
 source/com.google.android.play/core.extensions/build

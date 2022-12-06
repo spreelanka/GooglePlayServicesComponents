@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  
+  <ItemGroup>
+    <ProguardConfiguration Include="$(MSBuildThisFileDirectory)..\..\proguard\proguard.txt" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AndroidManifestMerger>manifestmerger.jar</AndroidManifestMerger>
+  </PropertyGroup>  
+  <PropertyGroup>
+    <AndroidFragmentType>AndroidX.Fragment.App.Fragment</AndroidFragmentType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_playservicestfliteimpl_16_0_0" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_playservicestfliteimpl_16_0_0">
+    <ItemGroup>
+      <XamarinBuildDownload Include="playservicestfliteimpl-16.0.0">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-tflite-impl/16.0.0/play-services-tflite-impl-16.0.0.aar</Url>
+        <ToFile>playservicestfliteimpl-16.0.0.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Sha256>80f09757afc8877d3383a5d112249ca77b29fb8fa1ed2baa155592643222b207</Sha256>
+      </XamarinBuildDownload>
+    </ItemGroup>
+
+
+    <ItemGroup>
+     <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)playservicestfliteimpl-16.0.0\playservicestfliteimpl-16.0.0.aar" />
+      <XamarinBuildDownloadAndroidAarLibrary Include="$(XamarinBuildDownloadDir)playservicestfliteimpl-16.0.0\playservicestfliteimpl-16.0.0.aar" />
+    </ItemGroup>
+  </Target>
+
+</Project>

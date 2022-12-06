@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "path": "..\\GooglePlayServices.sln",
+    "projects": [
+"io.opencensus.opencensus-api\\io.opencensus.opencensus-api.csproj","io.opencensus.opencensus-contrib-grpc-metrics\\io.opencensus.opencensus-contrib-grpc-metrics.csproj"
+    ]
+  }
+}
